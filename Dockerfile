@@ -1,4 +1,4 @@
-FROM leanlabs/erlang
+FROM leanlabs/erlang:1.0.0
 
 RUN apk --update add git \
         gcc \
