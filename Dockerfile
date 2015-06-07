@@ -7,11 +7,11 @@ RUN apk --update add git \
         erlang-syntax-tools \
         erlang-tools \
         erlang-reltool \
-        erlang-erl-interface
+        erlang-erl-interface && \
+    curl -O https://raw.githubusercontent.com/wiki/rebar/rebar/rebar && \
+    chmod +x rebar && \
+    mv rebar /usr/bin
 
 VOLUME ["/data"]
 
-WORKDIR /usr/bin
-
-RUN curl -O https://raw.githubusercontent.com/wiki/rebar/rebar/rebar \
-    && chmod +x rebar
+WORKDIR /data
