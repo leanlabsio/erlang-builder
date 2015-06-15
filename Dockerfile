@@ -6,6 +6,8 @@ RUN apk --update add git \
         curl \
         erlang-syntax-tools \
         erlang-tools \
+        erlang-parsetools \
+        erlang-dev \
         erlang-reltool \
         erlang-erl-interface && \
     curl -O https://raw.githubusercontent.com/wiki/rebar/rebar/rebar && \
